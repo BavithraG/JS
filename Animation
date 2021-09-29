@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   <!--<style>
+    img {
+    animation-name: zoom;
+    animation-duration: 5s;
+    }
+    @keyframes zoom{
+    from {
+    width: 100px;
+    }
+    to {
+    width: 300px;
+    }
+    }
+    </style>-->
+    <body>
+        <div>Animation and JS</div>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.XVK_iWVmww38_GA7Dmeu0gHaFj&pid=Api&P=0&w=205&h=155"><br>
+        <input placeholder="Subject 1" id = "x1"/> <br>
+            <input placeholder="Subject 2" id = "x2"/> <br>
+            <input placeholder="Subject 3" id = "x3"/> <br>
+            <input type = "submit" value = "Sum" onclick = "calc()"/>
+            <input type = "submit" value = "Average" onclick = "avg()"/>
+        <script>
+            var x1, x2, x3, y, z;
+            
+            z=y/3;
+            function calc(){
+                x1 = document.getElementById("x1").value
+                x2 = document.getElementById("x2").value
+                x3 = document.getElementById("x3").value
+                y=(parseInt(x1)+parseInt(x2)+parseInt(x3))
+                console.log(y)
+            }
+            function avg(){
+                x1 = document.getElementById("x1").value
+                x2 = document.getElementById("x2").value
+                x3 = document.getElementById("x3").value
+                z = ((parseInt(x1)+parseInt(x2)+parseInt(x3))/2);
+                console.log(z)
+            }
+            
+        </script>
+    </body>
+</html>
